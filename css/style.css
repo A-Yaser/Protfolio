@@ -93,7 +93,8 @@ header {
 
 .navbar {
   background-color: var(--background);
-  margin-bottom: 40px;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 /* .navbar .navbar-nav .nav-link,
@@ -129,6 +130,10 @@ nav button ion-icon {
 }
 
 /*__SERVICE-SECTION__*/
+
+.services {
+  min-height: 100vh;
+}
 
 .filter {
   border-radius: 20px 20px 0 0;
@@ -197,5 +202,12 @@ nav button ion-icon {
 
   .row {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* medume */
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
