@@ -14,15 +14,19 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--bckg);
-  color: var(--Primary);
+  color: var(--second);
 }
 
 section {
   margin-bottom: 64px;
 }
 
-h2 {
+h2,
+.landing h1 {
   color: white;
+}
+h1 {
+  color: var(--Primary);
 }
 
 .row {
@@ -46,8 +50,9 @@ h2 {
   box-shadow: 0 2.5rem 5.4rem rgba(0, 0, 0, 0.06);
 }
 
-.card-title {
-  color: var(--second);
+.card-title,
+.about-me-title {
+  color: var(--Primary);
   font-weight: 500;
 }
 
@@ -77,7 +82,7 @@ h2 {
   align-self: center;
 }
 
-/* ##__HEADER__##*/
+/* ##____*************____HEADER____*************____##*/
 
 header {
   background-color: var(--second);
@@ -120,7 +125,7 @@ nav button ion-icon {
 }
 .landing img,
 .about-me img {
-  width: 40%;
+  width: 45%;
 }
 
 /*__SERVICE-SECTION__*/
@@ -162,9 +167,31 @@ nav button ion-icon {
   font-weight: 600;
 }
 
+.vertical-line {
+  width: 2px;
+  background-color: var(--Primary);
+  margin-left: -2.5rem;
+  margin-right: -2.5rem;
+}
+
+.list-group-item-action:hover {
+  background-color: #fbeeed;
+}
+
+/* ##____*************____FOOTER____*************____##*/
+.footer-panel {
+  background-color: var(--second);
+  color: var(--Primary);
+}
+
+.copyright-name:link {
+  color: white;
+  text-decoration: none;
+}
 /* larg  */
 @media (max-width: 992px) {
-  .landing img {
+  .landing img,
+  .about-me img {
     width: 75%;
   }
 
